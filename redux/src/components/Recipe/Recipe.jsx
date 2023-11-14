@@ -9,7 +9,6 @@ const Recipe = ({ recipe }) => {
 
   const isExists = favorites.some((r) => r.id === recipe.id)
 
-  console.log(favorites)
   return (
     <div className={styles.recipe}>
       <h2>{recipe.name}</h2>
