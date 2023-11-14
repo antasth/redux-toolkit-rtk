@@ -1,11 +1,12 @@
 .header {
   width: 100%;
   padding: 1rem;
-  background-color: #92f8b4;
+  background-color: #e6f4f1;
   color: rgb(21, 21, 21);
   display: flex;
   height: 2rem;
   align-items: center;
+  position: relative;
 }
 
 .icon {
@@ -14,5 +15,14 @@
   width: 40px;
 }
 .count {
+  position: absolute;
   font-size: 1.2rem;
+  width: 18px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
+  background-color: #e6f4f1;
+  top: 10px;
+  left: 45px;
 }
