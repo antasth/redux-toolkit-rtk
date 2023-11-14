@@ -1,10 +1,9 @@
-import { useSelector } from 'react-redux'
 import { useActions } from '../../hooks/UseActions'
+import { useFavorites } from '../../hooks/useFavorites'
 import styles from './Recipe.module.css'
 
 const Recipe = ({ recipe }) => {
-  const favorites = useSelector((state) => state.favorites)
-
+  const { favorites } = useFavorites()
   const { toggleFavorites } = useActions()
 
   const isExists = favorites.some((r) => r.id === recipe.id)
