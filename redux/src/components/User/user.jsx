@@ -1,10 +1,13 @@
 import { useSelector } from 'react-redux'
+import { useActions } from '../../hooks/UseActions'
 
 const User = () => {
   const { isLoading, error, user } = useSelector((state) => state.user)
 
+  const { getUserById } = useActions()
   return (
     <div>
+      <button onClick={() => getUserById(1)}>Get user</button>
       {isLoading ? (
         <div>Loading...</div>
       ) : error ? (
