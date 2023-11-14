@@ -1,5 +1,6 @@
 import { useActions } from '../../hooks/UseActions'
 import { useFavorites } from '../../hooks/useFavorites'
+import { Button } from '../Button/Button'
 import styles from './Recipe.module.css'
 
 const Recipe = ({ recipe }) => {
@@ -12,9 +13,9 @@ const Recipe = ({ recipe }) => {
   return (
     <div className={styles.recipe}>
       <h2>{recipe.name}</h2>
-      <button className={styles.button} onClick={() => toggleFavorites(recipe)}>
+      <Button className={styles.button} onClick={() => toggleFavorites(recipe)}>
         {isExists ? 'Remove from favorites' : 'Add to favorites'}
-      </button>
+      </Button>
     </div>
   )
 }
