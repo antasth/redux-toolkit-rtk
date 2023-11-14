@@ -1,0 +1,18 @@
+.header {
+  width: 100%;
+  padding: 1rem;
+  background-color: #92f8b4;
+  color: rgb(21, 21, 21);
+  display: flex;
+  height: 2rem;
+  align-items: center;
+}
+
+.icon {
+  color: #005056;
+  height: 100%;
+  width: 40px;
+}
+.count {
+  font-size: 1.2rem;
+}
