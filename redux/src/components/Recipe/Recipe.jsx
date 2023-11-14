@@ -1,9 +1,11 @@
+import styles from './Recipe.module.css'
+
 const Recipe = ({ recipe }) => {
   const { name } = recipe
   return (
-    <div>
+    <div className={styles.recipe}>
       <h2>{name}</h2>
-      <button>Add to favorites</button>
+      <button className={styles.button}>Add to favorites</button>
     </div>
   )
 }
