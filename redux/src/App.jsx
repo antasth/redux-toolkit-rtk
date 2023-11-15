@@ -1,8 +1,11 @@
 import { Recipe } from './components/Recipe/Recipe'
 import { User } from './components/User/user'
 import { Header } from './components/header/Header'
+import { useGetRecipesQuery } from './store/api/api'
 
 function App() {
+  const { isLoading, data } = useGetRecipesQuery()
+  console.log(isLoading, data)
   return (
     <section>
       <Header />
